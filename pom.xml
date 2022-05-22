@@ -9,8 +9,20 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+		<org.springframework.version>5.2.8.RELEASE</org.springframework.version>
 	</properties>
 	<dependencies>
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.20</version>
+</dependency>
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>3.3.3</version>
+</dependency>
+
 		<dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-engine</artifactId>
@@ -23,6 +35,13 @@
     <version>1.5.2</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-launcher</artifactId>
+    <version>1.8.2</version>
+    <scope>test</scope>
+</dependency>
+
 	</dependencies>
 	
 </project>
