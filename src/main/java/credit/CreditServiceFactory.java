@@ -1,19 +1,19 @@
 package credit;
 
-public class CreditScoreFactory {
+public class CreditServiceFactory {
 	//use the getCreditService method to get a object of type CreditService
 	   public CreditService getCreditService(String creditType){
 	      if(creditType == null){
 	         return null;
 	      }		
 	      if(creditType.equalsIgnoreCase("EQUIFAX")){
-	         return new Equifax();
+	         return new EquifaxCreditService();
 	         
 	      } else if(creditType.equalsIgnoreCase("TRANSUNION")){
-	         return new TransUnion();
+	         return new TransUnionCreditService();
 	         
 	      } else if(creditType.equalsIgnoreCase("EXPERIAN")){
-	         return new Experian();
+	         return new ExperianCreditService();
 	      }
 	      
 	      return null;

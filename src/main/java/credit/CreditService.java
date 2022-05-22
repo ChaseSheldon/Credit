@@ -2,6 +2,6 @@ package credit;
 
 public interface CreditService {
 	
-	int score();
+	int score(String social);
 	
 }
