@@ -1,1 +1,8 @@
 /target/
+#eclipse Specific
+.settings
+#eclipse Specific
+.classpath
+#eclipse Specific
+.project
+
