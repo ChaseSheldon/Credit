@@ -1,10 +1,12 @@
 package credit;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class ExperianCreditServiceClient {
-	public int SocToScore(String social) {
+	public int socialToScore(String social) {
 		//this would use some sort of web service to connect to an api endpoint
 		//for now it just returns an integer
-		return 5;
+		return 600;
 	}
 }
